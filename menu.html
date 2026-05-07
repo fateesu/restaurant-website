@@ -1,196 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Menu - Bella Italia</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #f8f5f0;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        header {
-            background: #8B0000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .menu {
-            padding: 30px;
-        }
-
-        .category {
-            margin-bottom: 30px;
-        }
-
-        .category h2 {
-            border-bottom: 2px solid #8B0000;
-            padding-bottom: 5px;
-            color: #8B0000;
-        }
-
-        .item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            background: white;
-            margin-bottom: 10px;
-            border-radius: 8px;
-        }
-
-        .price {
-            font-weight: bold;
-            color: #228B22;
-        }
-
-        .delivery-yes {
-            color: green;
-            font-weight: bold;
-        }
-
-        .delivery-no {
-            color: red;
-            font-weight: bold;
-        }
-
-        .item h3 a {
-            text-decoration: none;
-            color: #8B0000;
-        }
-
-        .item h3 a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #222;
-            color: white;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .item {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <h1>🍝 Bella Italia Menu</h1>
+    <nav class="navbar">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
+        <h1 class="logo">🍝 Bella Italia</h1>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+        </div>
+
     </nav>
-</header>
 
-<div class="menu">
+    <div class="menu">
 
-    <!-- PIZZAS -->
-    <div class="category">
-        <h2>Pizzas 🍕</h2>
+        <!-- PIZZAS -->
 
-        <div class="item">
-            <div>
-                <h3><a href="pizza-margherita.html">Margherita</a></h3>
-                <p>Tomato, mozzarella, basil</p>
-                <p class="delivery-yes">🚚 Delivery: Yes</p>
+        <div class="category">
+
+            <h2>Pizzas 🍕</h2>
+
+            <div class="menu-grid">
+
+                <div class="item">
+
+                    <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143">
+
+                    <div class="item-content">
+
+                        <h3>Margherita Pizza</h3>
+
+                        <p>Fresh tomato sauce, mozzarella and basil.</p>
+
+                        <p class="delivery">🚚 Delivery Available</p>
+
+                        <p class="price">50 MAD</p>
+
+                        <a href="pizza-margherita.html" class="btn">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+
+                    <div class="item-content">
+
+                        <h3>4 Fromages</h3>
+
+                        <p>Rich blend of four delicious cheeses.</p>
+
+                        <p class="delivery">🚚 Delivery Available</p>
+
+                        <p class="price">70 MAD</p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
+
+                    <div class="item-content">
+
+                        <h3>Chicken Pizza</h3>
+
+                        <p>Chicken, mozzarella and special sauce.</p>
+
+                        <p class="delivery">🚚 No Delivery</p>
+
+                        <p class="price">65 MAD</p>
+
+                    </div>
+
+                </div>
+
             </div>
-            <span class="price">50 MAD</span>
+
         </div>
 
-        <div class="item">
-            <div>
-                <h3>4 Fromages</h3>
-                <p>Mix of cheeses</p>
-                <p class="delivery-yes">🚚 Delivery: Yes</p>
+        <!-- PASTA -->
+
+        <div class="category">
+
+            <h2>Pasta 🍝</h2>
+
+            <div class="menu-grid">
+
+                <div class="item">
+
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9">
+
+                    <div class="item-content">
+
+                        <h3>Spaghetti Carbonara</h3>
+
+                        <p>Creamy pasta with parmesan cheese.</p>
+
+                        <p class="delivery">🚚 Delivery Available</p>
+
+                        <p class="price">60 MAD</p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <img src="https://images.unsplash.com/photo-1619895092538-128341789043">
+
+                    <div class="item-content">
+
+                        <h3>Lasagna</h3>
+
+                        <p>Layers of pasta, beef and cheese.</p>
+
+                        <p class="delivery">🚚 No Delivery</p>
+
+                        <p class="price">75 MAD</p>
+
+                    </div>
+
+                </div>
+
             </div>
-            <span class="price">70 MAD</span>
+
         </div>
 
-        <div class="item">
-            <div>
-                <h3>Pizza Poulet</h3>
-                <p>Chicken, cheese, sauce</p>
-                <p class="delivery-no">🚚 Delivery: No</p>
+        <!-- DESSERTS -->
+
+        <div class="category">
+
+            <h2>Desserts 🍰</h2>
+
+            <div class="menu-grid">
+
+                <div class="item">
+
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9">
+
+                    <div class="item-content">
+
+                        <h3>Tiramisu</h3>
+
+                        <p>Classic Italian coffee dessert.</p>
+
+                        <p class="delivery">🚚 Delivery Available</p>
+
+                        <p class="price">40 MAD</p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777">
+
+                    <div class="item-content">
+
+                        <h3>Panna Cotta</h3>
+
+                        <p>Vanilla cream dessert with caramel.</p>
+
+                        <p class="delivery">🚚 No Delivery</p>
+
+                        <p class="price">35 MAD</p>
+
+                    </div>
+
+                </div>
+
             </div>
-            <span class="price">65 MAD</span>
+
         </div>
+
     </div>
 
-    <!-- PASTA -->
-    <div class="category">
-        <h2>Pasta 🍝</h2>
+    <footer>
 
-        <div class="item">
-            <div>
-                <h3>Spaghetti Carbonara</h3>
-                <p>Creamy pasta with bacon</p>
-                <p class="delivery-yes">🚚 Delivery: Yes</p>
-            </div>
-            <span class="price">60 MAD</span>
-        </div>
+        <p>© 2026 Bella Italia</p>
 
-        <div class="item">
-            <div>
-                <h3>Lasagna</h3>
-                <p>Beef, cheese, tomato sauce</p>
-                <p class="delivery-no">🚚 Delivery: No</p>
-            </div>
-            <span class="price">75 MAD</span>
-        </div>
-    </div>
-
-    <!-- DESSERTS -->
-    <div class="category">
-        <h2>Desserts 🍰</h2>
-
-        <div class="item">
-            <div>
-                <h3>Tiramisu</h3>
-                <p>Italian coffee dessert</p>
-                <p class="delivery-yes">🚚 Delivery: Yes</p>
-            </div>
-            <span class="price">40 MAD</span>
-        </div>
-
-        <div class="item">
-            <div>
-                <h3>Panna Cotta</h3>
-                <p>Cream dessert with vanilla</p>
-                <p class="delivery-no">🚚 Delivery: No</p>
-            </div>
-            <span class="price">35 MAD</span>
-        </div>
-    </div>
-
-</div>
-
-<footer>
-    <p>© 2026 Bella Italia</p>
-</footer>
+    </footer>
 
 </body>
+
 </html>

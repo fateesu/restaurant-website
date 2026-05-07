@@ -1,86 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bella Italia</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f8f5f1;
-            color: #330;
-        }
 
-        header {
-            background: #8B0001;
-            color: white;
-            padding: 31px;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .hero {
-            padding: 81px 21px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #228B23;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            margin-top: 21px;
-        }
-
-        footer {
-            background: #224;
-            color: white;
-            padding: 17px;
-            margin-top: 51px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <header>
-        <h1>Bella Italia</h1>
+    <!-- NAVBAR -->
 
-        <p>Authentic Italian Cuisine</p>
-    </header>
+    <nav class="navbar">
+
+        <h1 class="logo">🍝 Bella Italia</h1>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
 
     <section class="hero">
-        <h2>Welcome to Bella Italia</h2>
-        <p>Delicious Italian food made with love 🍕</p>
-        <a href="menu.html">View Menu</a>
-        <!--<a href="#" class="btn">View Menu</a>-->
-    </section>
-    <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Marrakech, Morocco</p>
-    <p>📞 +212 600 000 000</p>
-    <p>✉️ bella@restaurant.com</p>
-</section>
-<section id="reservation">
-    <h2>Book a Table</h2>
 
-    <form>
-        <input type="text" placeholder="Your Name">
-        <input type="date">
-        <input type="time">
-        <input type="number" placeholder="Number of guests">
-        <button>Reserve</button>
-    </form>
-</section>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="#contact">Contact</a>
-</nav>
+        <h2>Authentic Italian Cuisine</h2>
+
+        <p>Fresh ingredients, traditional recipes, unforgettable taste 🍕</p>
+
+        <a href="menu.html" class="btn">View Menu</a>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Bella Italia brings the heart of Italy to Morocco.
+            Enjoy handcrafted pizzas, creamy pasta, and delicious desserts
+            prepared with love and passion.
+        </p>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Marrakech, Morocco</p>
+        <p>📞 +212 600 000 000</p>
+        <p>✉️ bella@restaurant.com</p>
+
+    </section>
+
+    <!-- RESERVATION -->
+
+    <section id="reservation">
+
+        <h2>Book a Table</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="date">
+
+            <input type="time">
+
+            <input type="number" placeholder="Number of guests">
+
+            <button>Reserve Now</button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
 
     <footer>
+
         <p>© 2026 Bella Italia Restaurant</p>
+
     </footer>
 
 </body>
+
 </html>

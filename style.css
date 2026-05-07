@@ -1,0 +1,313 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#fff8f0;
+    color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:#8B0000;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd700;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+
+    url('https://images.unsplash.com/photo-1513104890138-7c749659a591');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+
+    background:#228B22;
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#2fa12f;
+}
+
+/* ABOUT */
+
+.about{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.about h2{
+    color:#8B0000;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* MENU */
+
+.menu{
+    padding:50px 20px;
+}
+
+.category{
+    margin-bottom:50px;
+}
+
+.category h2{
+    text-align:center;
+    color:#8B0000;
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.item{
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.item:hover{
+    transform:translateY(-8px);
+}
+
+.item img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.item-content{
+    padding:20px;
+}
+
+.item h3{
+    color:#8B0000;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#228B22;
+    font-size:22px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.delivery{
+    margin-top:10px;
+    font-weight:bold;
+    color:green;
+}
+
+/* CONTACT */
+
+#contact{
+    background:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+#contact h2{
+    color:#8B0000;
+    margin-bottom:20px;
+}
+
+/* RESERVATION */
+
+#reservation{
+    padding:60px 20px;
+    text-align:center;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+
+    border:none;
+    border-radius:10px;
+
+    background:#f1f1f1;
+}
+
+button{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#8B0000;
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#600000;
+}
+
+/* DETAILS PAGE */
+
+.container{
+    max-width:1000px;
+
+    margin:50px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.container img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.content{
+    padding:40px;
+}
+
+.content h2{
+    color:#8B0000;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.content p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        margin-top:15px;
+    }
+
+    .hero h2{
+        font-size:40px;
+    }
+
+}
