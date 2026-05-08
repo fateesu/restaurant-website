@@ -47,81 +47,6 @@ body{
     color:#ffd700;
 }
 
-/* HERO */
-
-.hero{
-    height:90vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)),
-
-    url('https://images.unsplash.com/photo-1513104890138-7c749659a591');
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-    color:white;
-    padding:20px;
-}
-
-.hero h2{
-    font-size:60px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-/* BUTTON */
-
-.btn{
-    display:inline-block;
-
-    background:#228B22;
-    color:white;
-
-    padding:14px 30px;
-
-    border-radius:40px;
-
-    text-decoration:none;
-
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
-    background:#2fa12f;
-}
-
-/* ABOUT */
-
-.about{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.about h2{
-    color:#8B0000;
-    font-size:40px;
-    margin-bottom:20px;
-}
-
-.about p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-}
-
 /* MENU */
 
 .menu{
@@ -129,58 +54,70 @@ body{
 }
 
 .category{
-    margin-bottom:50px;
+    margin-bottom:70px;
 }
 
 .category h2{
     text-align:center;
     color:#8B0000;
-    font-size:35px;
-    margin-bottom:30px;
+    font-size:38px;
+    margin-bottom:35px;
 }
+
+/* GRID */
 
 .menu-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
 }
+
+/* CARD */
 
 .item{
     background:white;
 
-    border-radius:15px;
+    border-radius:18px;
 
     overflow:hidden;
 
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
 
     transition:0.3s;
 }
 
 .item:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 }
 
 .item img{
     width:100%;
-    height:220px;
+    height:230px;
     object-fit:cover;
 }
 
 .item-content{
-    padding:20px;
+    padding:22px;
 }
 
 .item h3{
     color:#8B0000;
     margin-bottom:10px;
+    font-size:24px;
+}
+
+.item p{
+    line-height:1.6;
 }
 
 .price{
     color:#228B22;
     font-size:22px;
     font-weight:bold;
-    margin-top:10px;
+    margin-top:12px;
 }
 
 .delivery{
@@ -189,99 +126,28 @@ body{
     color:green;
 }
 
-/* CONTACT */
+/* BUTTON */
 
-#contact{
-    background:white;
-    padding:60px 20px;
-    text-align:center;
-}
+.btn{
+    display:inline-block;
 
-#contact h2{
-    color:#8B0000;
-    margin-bottom:20px;
-}
+    margin-top:15px;
 
-/* RESERVATION */
-
-#reservation{
-    padding:60px 20px;
-    text-align:center;
-}
-
-form{
-    max-width:500px;
-    margin:auto;
-}
-
-input{
-    width:100%;
-    padding:15px;
-    margin:10px 0;
-
-    border:none;
-    border-radius:10px;
-
-    background:#f1f1f1;
-}
-
-button{
-    width:100%;
-
-    padding:15px;
-
-    border:none;
-    border-radius:10px;
-
-    background:#8B0000;
+    background:#228B22;
     color:white;
 
-    font-size:16px;
+    padding:12px 25px;
 
-    cursor:pointer;
+    border-radius:30px;
+
+    text-decoration:none;
 
     transition:0.3s;
 }
 
-button:hover{
-    background:#600000;
-}
-
-/* DETAILS PAGE */
-
-.container{
-    max-width:1000px;
-
-    margin:50px auto;
-
-    background:white;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-}
-
-.container img{
-    width:100%;
-    height:450px;
-    object-fit:cover;
-}
-
-.content{
-    padding:40px;
-}
-
-.content h2{
-    color:#8B0000;
-    margin-bottom:20px;
-    font-size:40px;
-}
-
-.content p{
-    line-height:1.8;
-    margin-bottom:20px;
+.btn:hover{
+    background:#2fa12f;
+    transform:scale(1.05);
 }
 
 /* FOOTER */
@@ -289,9 +155,12 @@ button:hover{
 footer{
     background:#111;
     color:white;
+
     text-align:center;
-    padding:30px;
-    margin-top:40px;
+
+    padding:35px;
+
+    margin-top:50px;
 }
 
 /* MOBILE */
@@ -306,8 +175,8 @@ footer{
         margin-top:15px;
     }
 
-    .hero h2{
-        font-size:40px;
+    .category h2{
+        font-size:30px;
     }
 
 }
