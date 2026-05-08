@@ -1,3 +1,7 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
 *{
     margin:0;
     padding:0;
@@ -14,7 +18,9 @@ body{
     color:#333;
 }
 
+/* ========================= */
 /* NAVBAR */
+/* ========================= */
 
 .navbar{
     display:flex;
@@ -47,7 +53,189 @@ body{
     color:#ffd700;
 }
 
-/* MENU */
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+.hero{
+    height:90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+
+    url('https://images.unsplash.com/photo-1513104890138-7c749659a591');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+
+    padding:20px;
+}
+
+.hero h2{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:30px;
+    max-width:700px;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.btn{
+    display:inline-block;
+
+    background:#228B22;
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-size:18px;
+    font-weight:500;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#2fa12f;
+}
+
+/* ========================= */
+/* ABOUT SECTION */
+/* ========================= */
+
+.about{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.about h2{
+    color:#8B0000;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+
+    line-height:1.9;
+
+    font-size:18px;
+}
+
+/* ========================= */
+/* CONTACT SECTION */
+/* ========================= */
+
+#contact{
+    background:white;
+
+    padding:70px 20px;
+
+    text-align:center;
+}
+
+#contact h2{
+    color:#8B0000;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+#contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* ========================= */
+/* RESERVATION SECTION */
+/* ========================= */
+
+#reservation{
+    padding:70px 20px;
+    text-align:center;
+}
+
+#reservation h2{
+    color:#8B0000;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+form{
+    max-width:550px;
+    margin:auto;
+}
+
+input{
+    width:100%;
+
+    padding:16px;
+
+    margin:12px 0;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#f1f1f1;
+
+    font-size:16px;
+}
+
+input:focus{
+    outline:none;
+    border:2px solid #8B0000;
+}
+
+/* ========================= */
+/* BUTTON FORM */
+/* ========================= */
+
+button{
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#8B0000;
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#600000;
+}
+
+/* ========================= */
+/* MENU PAGE */
+/* ========================= */
 
 .menu{
     padding:50px 20px;
@@ -64,8 +252,6 @@ body{
     margin-bottom:35px;
 }
 
-/* GRID */
-
 .menu-grid{
     display:grid;
 
@@ -75,7 +261,9 @@ body{
     gap:30px;
 }
 
+/* ========================= */
 /* CARD */
+/* ========================= */
 
 .item{
     background:white;
@@ -126,31 +314,49 @@ body{
     color:green;
 }
 
-/* BUTTON */
+/* ========================= */
+/* DETAILS PAGE */
+/* ========================= */
 
-.btn{
-    display:inline-block;
+.container{
+    max-width:1000px;
 
-    margin-top:15px;
+    margin:50px auto;
 
-    background:#228B22;
-    color:white;
+    background:white;
 
-    padding:12px 25px;
+    border-radius:20px;
 
-    border-radius:30px;
+    overflow:hidden;
 
-    text-decoration:none;
-
-    transition:0.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
-.btn:hover{
-    background:#2fa12f;
-    transform:scale(1.05);
+.container img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
 }
 
+.content{
+    padding:40px;
+}
+
+.content h2{
+    color:#8B0000;
+    margin-bottom:20px;
+    font-size:42px;
+}
+
+.content p{
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* ========================= */
 /* FOOTER */
+/* ========================= */
 
 footer{
     background:#111;
@@ -163,19 +369,49 @@ footer{
     margin-top:50px;
 }
 
-/* MOBILE */
+footer p{
+    font-size:16px;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
 
 @media(max-width:768px){
 
     .navbar{
         flex-direction:column;
+        padding:20px;
     }
 
     .nav-links{
         margin-top:15px;
     }
 
+    .nav-links a{
+        margin:0 10px;
+    }
+
+    .hero h2{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .about h2,
+    #contact h2,
+    #reservation h2,
     .category h2{
+        font-size:30px;
+    }
+
+    .container img{
+        height:300px;
+    }
+
+    .content h2{
         font-size:30px;
     }
 
